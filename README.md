@@ -77,13 +77,3 @@ So my ask for help would be to do a direct port of the C# ClassLibrary1.Rating2 
 
 Second, would there be a better F# version? If so, an example. 
 
-This is WASM Blazor but not really and Bolero, but not really (as was told to me that Bolero is really elmish) so I am using and referencing Bolero code but really it's a matter of running ui in f# on WASM. A big part of that is just because it is the only F# on WASM really out there.
-  
-My hangup is that first, I still do not understand the steps happening with the RenderTree (like how it actually renders), and the RenderFragment and those sort of things. Still working on that learning.  
-The crucial hangup seems to be the usage of delegates. From studying ComponentBase and routers and such, the key seems to be " _renderHandle.Render(_renderFragment) "  
-a type Microsoft.AspNetCore.Components.RenderHandle instance that has the render method. 
-The .Render takes a Microsoft.AspNetCore.Components.RenderFragment
-which is defined as a delegate. That is where I go off the rails.
-
-Changing between the C# base components is in startup.fs
-Change the commented lines. 
