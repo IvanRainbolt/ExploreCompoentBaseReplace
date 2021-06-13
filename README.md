@@ -8,6 +8,7 @@ Here is the repo:
 https://github.com/IvanRainbolt/ExploreCompoentBaseReplace
 
 Changing between the C# base components is in startup.fs
+
 Change the commented lines. 
 
 The idea is to not use inherit from (Microsoft.AspNetCore.Components) ComponentBase (reasons are not really relevant for this issue, this is just a very first step in my overall plan) but instead implement the IComponent interface directly. 
