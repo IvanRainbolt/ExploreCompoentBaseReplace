@@ -69,11 +69,3 @@ The crucial hangup seems to be the usage of delegates. From studying ComponentBa
 a type Microsoft.AspNetCore.Components.RenderHandle instance that has the render method. 
 The .Render takes a Microsoft.AspNetCore.Components.RenderFragment
 which is defined as a delegate. That is where I go off the rails.
-
-
-https://dev.to/madhust/blazor-in-depth-create-blazor-component-without-lifecycle-methods-2786
-
-So my ask for help would be to do a direct port of the C# ClassLibrary1.Rating2 to an F# version that actually works the same way. 
-
-Second, would there be a better F# version? If so, an example. 
-
